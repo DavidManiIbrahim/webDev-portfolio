@@ -40,7 +40,7 @@ const About = () => {
                 Started my journey in web development during college, where I discovered my passion for creating beautiful and functional user interfaces. Since then, I've worked with startups and established companies, helping them bring their digital visions to life.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                I specialize in React, TypeScript, and modern CSS frameworks, always staying up-to-date with the latest trends and best practices in frontend development. When I'm not coding, you'll find me exploring new design trends, contributing to open-source projects, or mentoring aspiring developers.
+                I specialize in React, Javascript, and modern CSS frameworks, always staying up-to-date with the latest trends and best practices in frontend development. When I'm not coding, you'll find me exploring new design trends, contributing to open-source projects, or mentoring aspiring developers.
               </p>
               <div className="flex flex-wrap gap-4 mt-6">
                 <span className="px-4 py-2 bg-purple-600/20 text-purple-300 rounded-full text-sm font-medium">5+ Years Experience</span>
@@ -53,7 +53,9 @@ const About = () => {
               <div className="w-80 h-80 mx-auto relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full opacity-20 animate-pulse"></div>
                 <div className="absolute inset-4 bg-gray-700 rounded-full flex items-center justify-center">
-                  <div className="text-6xl">👨‍💻</div>
+                  <div className="text-6xl">👨‍💻
+                  <img src="/public/" alt="" srcset="" />
+                  </div>
                 </div>
               </div>
             </div>

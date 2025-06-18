@@ -28,19 +28,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      value: 'alex.johnson@email.com',
-      link: 'mailto:alex.johnson@email.com'
+      value: 'ibrahimmanidavid@email.com',
+      link: 'mailto:ibrahimmanidavid@email.com'
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '+234 (803) 048 8805',
+      link: 'tel:+234 803 0488 805'
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Adamawa State Nigeria, NG',
       link: '#'
     }
   ];
@@ -49,7 +49,7 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       name: 'GitHub',
-      url: '#',
+      url: 'https://github.com/DavidManiIbrahim',
       color: 'hover:text-gray-400'
     },
     {
@@ -144,7 +144,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200 outline-none"
-                      placeholder="John Doe"
+                      placeholder="Enter your name"
                     />
                   </div>
                   <div>
@@ -159,7 +159,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200 outline-none"
-                      placeholder="john@example.com"
+                      placeholder="Enter your email"
                     />
                   </div>
                 </div>

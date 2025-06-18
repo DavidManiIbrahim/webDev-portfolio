@@ -7,7 +7,7 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const titles = ['Frontend Developer', 'React Specialist', 'UI/UX Enthusiast'];
+  const titles = ['Frontend Developer', 'React Specialist', 'UI/UX Enthusiast','Vibe Coder'];
 
   useEffect(() => {
     const handleTyping = () => {
@@ -46,7 +46,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-purple-200 to-cyan-200 bg-clip-text text-transparent">
-            Alex Johnson
+            DAVID MANI IBRAHIM
           </h1>
           <h2 className="text-2xl md:text-4xl font-light mb-8 text-gray-300">
             I'm a <span className="text-purple-400 font-semibold">{text}</span>
@@ -57,13 +57,13 @@ const Hero = () => {
           </p>
           
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="#" className="p-3 bg-gray-800 hover:bg-purple-600 rounded-full transition-all duration-300 transform hover:scale-110">
+            <a href="https://www.github.com/davidmaniibrahim" target='_blank' className="p-3 bg-gray-800 hover:bg-purple-600 rounded-full transition-all duration-300 transform hover:scale-110">
               <Github size={24} className="text-white" />
             </a>
-            <a href="#" className="p-3 bg-gray-800 hover:bg-blue-600 rounded-full transition-all duration-300 transform hover:scale-110">
+            <a href="https://www.linkin.com" className="p-3 bg-gray-800 hover:bg-blue-600 rounded-full transition-all duration-300 transform hover:scale-110">
               <Linkedin size={24} className="text-white" />
             </a>
-            <a href="#" className="p-3 bg-gray-800 hover:bg-green-600 rounded-full transition-all duration-300 transform hover:scale-110">
+            <a href="https://www.gmail.com" className="p-3 bg-gray-800 hover:bg-green-600 rounded-full transition-all duration-300 transform hover:scale-110">
               <Mail size={24} className="text-white" />
             </a>
           </div>
@@ -75,7 +75,7 @@ const Hero = () => {
             >
               View My Work
             </button>
-            <button className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105">
+            <button className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105" >
               Download CV
             </button>
           </div>

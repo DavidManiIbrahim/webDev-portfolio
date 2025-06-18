@@ -15,9 +15,9 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center space-x-2 text-gray-400">
-            <span>© {currentYear} Made with</span>
-            <Heart size={16} className="text-red-500 fill-current" />
-            <span>by Alex Johnson</span>
+            <span>© {currentYear} Made by</span>
+            {/* <Heart size={16} className="text-red-500 fill-current" /> */}
+            <span> David Mani Ibrahim</span>
           </div>
         </div>
         
