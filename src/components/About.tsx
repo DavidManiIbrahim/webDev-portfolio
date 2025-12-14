@@ -54,7 +54,7 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full opacity-20 animate-pulse"></div>
                 <div className="absolute inset-4 bg-gray-700 rounded-full flex items-center justify-center">
                   <div className="text-6xl">
-                  <img className='rounded-full' src="/public/mani.jpg" alt="profile_image" />
+                  <img className='rounded-full' src="/mani.jpg" alt="profile_image" />
                   </div>
                 </div>
               </div>

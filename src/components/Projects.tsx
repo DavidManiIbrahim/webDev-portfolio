@@ -44,7 +44,7 @@ const Projects = () => {
     {
       title: 'Gabyto Inventory Management System',
       description: 'Real-time cryptocurrency tracking application with portfolio management, price alerts, and detailed market analysis with interactive charts.',
-      image: '/gims.png',
+      image: '/GIMS.png',
       tech: ['React', 'Material UI', 'Supabase', 'TailwindCSS'],
       liveUrl: 'https://gabyto-inventory-management-system.vercel.app/',
       githubUrl: 'https://github.com/DavidManiIbrahim/Gabyto-inventory-management-system',
