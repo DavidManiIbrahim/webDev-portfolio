@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: 'Audiophile E-Commerce Platform',
       description: 'A full-stack e-commerce solution built with React, Convex, and Paystack. Features include user authentication, payment processing etc.',
-      image: 'public/image.png',
+      image: '/image.png',
       tech: ['React', 'Typescript', 'TailwindCSS', 'Shadcn', 'Convex',],
       liveUrl: 'https://hng13-stage3-audiophile-store.vercel.app/',
       githubUrl: 'https://github.com/DavidManiIbrahim/hng13-stage3-audiophile-store',
@@ -17,7 +17,7 @@ const Projects = () => {
     {
       title: 'FarmMarket',
       description: 'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features. Built with React and Firebase.',
-      image: 'public/FM.png',
+      image: '/FM.png',
       tech: ['React', 'Supabase', 'TailwindCSS', 'Material-UI'],
       liveUrl: 'https://rural-grow-connect.vercel.app/',
       githubUrl: 'https://github.com/DavidManiIbrahim/farmMarket',
@@ -26,7 +26,7 @@ const Projects = () => {
     {
       title: 'Abelov Customer Relationship Management System',
       description: 'An interactive dashboard displaying weather data with beautiful charts and forecasts. Features location-based weather, historical data, and responsive design.',
-      image: 'public/acrms.png',
+      image: '/acrms.png',
       tech: ['React', 'Typescript', 'Supabase', 'Tailwind CSS'],
       liveUrl: 'https://acrms.vercel.app',
       githubUrl: 'https://github.com/DavidManiIbrahim/acrms',
@@ -35,7 +35,7 @@ const Projects = () => {
     {
       title: 'Abelov Technical Records',
       description: 'A comprehensive social media management tool for scheduling posts, analyzing engagement, and managing multiple accounts across different platforms.',
-      image: 'public/arms.png',
+      image: '/arms.png',
       tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Node', 'Express', 'MongoDB'],
       liveUrl: 'https://abelov-technical-records.onrender.com/',
       githubUrl: 'https://github.com/DavidManiIbrahim/Abelov-Technical-Records-main',
@@ -44,7 +44,7 @@ const Projects = () => {
     {
       title: 'Gabyto Inventory Management System',
       description: 'Real-time cryptocurrency tracking application with portfolio management, price alerts, and detailed market analysis with interactive charts.',
-      image: 'public/gims.png',
+      image: '/gims.png',
       tech: ['React', 'Material UI', 'Supabase', 'TailwindCSS'],
       liveUrl: 'https://gabyto-inventory-management-system.vercel.app/',
       githubUrl: 'https://github.com/DavidManiIbrahim/Gabyto-inventory-management-system',
@@ -53,7 +53,7 @@ const Projects = () => {
     {
       title: 'Suggestion Box',
       description: 'A modern feedback and suggestion platform with real time updates, admin moderation, and secure authentication built using React, TypeScript, and Supabase.',
-      image: 'public/box.jpg',
+      image: '/box.jpg',
       tech: ['React', 'Supabase', 'Typescript', 'TailwindCSS'],
       liveUrl: 'https://incomparable-cocada-b8264f.netlify.app/',
       githubUrl: 'https://github.com/DavidManiIbrahim/suggestion-box',
@@ -62,7 +62,7 @@ const Projects = () => {
         {
       title: 'Cyberdata Auromations Limited',
       description: 'A community-driven platform for sharing and discovering recipes with features like ratings, comments, meal planning, and shopping lists.',
-      image: 'public/cyber.jpg',
+      image: '/cyber.jpg',
       tech: ['React', 'Supabase', 'TailwindCSS', 'TypeScript'],
       liveUrl: 'https://cyberdata-automations-limited.vercel.app/',
       githubUrl: 'https://github.com/DavidManiIbrahim/cyberdata-automations-limited',
