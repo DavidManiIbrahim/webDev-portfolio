@@ -7,7 +7,7 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const titles = ['Frontend Developer', 'React Specialist', 'UI/UX Enthusiast','Vibe Coder'];
+  const titles = ['Frontend Engineer', "Fullstack Developer", 'Web Developer', 'Mobile Developer'];
 
   useEffect(() => {
     const handleTyping = () => {
@@ -57,13 +57,13 @@ const Hero = () => {
           </p>
           
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="https://www.github.com/davidmaniibrahim" target='_blank' className="p-3 bg-gray-800 hover:bg-purple-600 rounded-full transition-all duration-300 transform hover:scale-110">
+            <a href="https://www.github.com/davidmaniibrahim" target='_blank'rel="noopener noreferrer" className="p-3 bg-gray-800 hover:bg-purple-600 rounded-full transition-all duration-300 transform hover:scale-110">
               <Github size={24} className="text-white" />
             </a>
-            <a href="https://www.linkin.com" className="p-3 bg-gray-800 hover:bg-blue-600 rounded-full transition-all duration-300 transform hover:scale-110">
+            <a href="https://www.linkedin.com" target='_blank'rel="noopener noreferrer" className="p-3 bg-gray-800 hover:bg-blue-600 rounded-full transition-all duration-300 transform hover:scale-110">
               <Linkedin size={24} className="text-white" />
             </a>
-            <a href="https://www.gmail.com" className="p-3 bg-gray-800 hover:bg-green-600 rounded-full transition-all duration-300 transform hover:scale-110">
+            <a href="mailto:ibrahimmanidavid@gmail.com" target='_blank'rel="noopener noreferrer" className="p-3 bg-gray-800 hover:bg-green-600 rounded-full transition-all duration-300 transform hover:scale-110">
               <Mail size={24} className="text-white" />
             </a>
           </div>
@@ -76,7 +76,9 @@ const Hero = () => {
               View My Work
             </button>
             <button className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105" >
+             <a href="/resume.pdf" download>
               Download CV
+             </a>
             </button>
           </div>
         </div>

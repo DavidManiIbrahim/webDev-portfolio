@@ -5,21 +5,21 @@ const Skills = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const skills = [
-    { name: 'React / Next.js', level: 95, color: 'from-blue-500 to-cyan-500' },
-    { name: 'TypeScript', level: 50, color: 'from-pink-600 to-pink-400' },
-    { name: 'JavaScript (ES6+)', level: 65, color: 'from-yellow-500 to-orange-500' },
+    { name: 'React / Next.js', level: 75, color: 'from-blue-500 to-cyan-500' },
+    { name: 'JavaScript / TypeScript', level: 50, color: 'from-pink-600 to-pink-400' },
+    // { name: '', level: 65, color: 'from-yellow-500 to-orange-500' },
     { name: 'React Native', level: 55, color: 'from-cyan-500 to-cyan-500' },
-    { name: 'CSS / Tailwind', level: 72, color: 'from-green-500 to-teal-500' },
+    { name: 'CSS / Bootstrap / Tailwind CSS', level: 72, color: 'from-green-500 to-teal-500' },
     { name: 'HTML5', level: 100, color: 'from-orange-500 to-red-500' },
-    { name: 'Node.js', level: 50, color: 'from-gray-600 to-gray-400' },
-    { name: 'Bootstrap', level: 82, color: 'from-indigo-500 to-indigo-500' },
+    { name: 'Node.js / Express', level: 50, color: 'from-gray-600 to-gray-400' },
+    // { name: '', level: 82, color: 'from-indigo-500 to-indigo-500' },
     { name: 'Git / GitHub', level: 88, color: 'from-yellow-600 to-yellow-400' },
-    { name: 'Responsive Design', level: 60, color: 'from-purple-500 to-purple-500' },
+    { name: 'MongoDB', level: 60, color: 'from-purple-500 to-purple-500' },
   ];
 
   const tools = [
-    'VS Code', 'Figma', 'Adobe XD', 'Vite', 'Supabase',
-    'MongoDB', 'Postman', 'Vercel', 'Github',
+    'VS Code', 'Figma', 'Canva', 'Vite', 'Supabase',
+    'Convex', 'Postman', 'Vercel', 'Github',
     'Expo'
   ];
 

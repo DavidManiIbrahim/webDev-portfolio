@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useMutation } from 'convex/react';
+import { api } from '../../convex/_generated/api';
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send } from 'lucide-react';
 
 const Contact = () => {
@@ -8,6 +10,11 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [statusMessage, setStatusMessage] = useState('');
+
+  const sendMessage = useMutation(api.messages.sendMessage);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -16,12 +23,32 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setIsLoading(true);
+    setSubmitStatus('idle');
+
+    try {
+      await sendMessage({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message
+      });
+      
+      setSubmitStatus('success');
+      setStatusMessage('Message sent successfully! I\'ll get back to you soon.');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+      
+      // Clear success message after 5 seconds
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+    } catch (error) {
+      setSubmitStatus('error');
+      setStatusMessage('Failed to send message. Please try again.');
+      console.error('Error sending message:', error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const contactInfo = [
@@ -60,8 +87,9 @@ const Contact = () => {
     },
     {
       icon: <Twitter className="w-6 h-6" />,
-      name: 'Twitter',
-      url: '#',
+      // icon: <X className="w-6 h-6" />,
+      name: 'X',
+      url: 'https://x.com/Mhanee001',
       color: 'hover:text-cyan-400'
     }
   ];
@@ -198,11 +226,28 @@ const Contact = () => {
                 
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2"
+                  disabled={isLoading}
+                  className={`w-full px-8 py-4 ${
+                    isLoading 
+                      ? 'bg-gray-600 cursor-not-allowed' 
+                      : 'bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700'
+                  } text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-2`}
                 >
                   <Send size={20} />
-                  <span>Send Message</span>
+                  <span>{isLoading ? 'Sending...' : 'Send Message'}</span>
                 </button>
+
+                {submitStatus === 'success' && (
+                  <div className="p-4 bg-green-900/50 border border-green-500 rounded-lg">
+                    <p className="text-green-400">{statusMessage}</p>
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="p-4 bg-red-900/50 border border-red-500 rounded-lg">
+                    <p className="text-red-400">{statusMessage}</p>
+                  </div>
+                )}
               </form>
             </div>
           </div>

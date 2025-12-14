@@ -6,63 +6,72 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, inventory management, and real-time notifications.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Socket.io'],
-      liveUrl: '#',
-      githubUrl: '#',
+      title: 'Audiophile E-Commerce Platform',
+      description: 'A full-stack e-commerce solution built with React, Convex, and Paystack. Features include user authentication, payment processing etc.',
+      image: 'public/image.png',
+      tech: ['React', 'Typescript', 'TailwindCSS', 'Shadcn', 'Convex',],
+      liveUrl: 'https://hng13-stage3-audiophile-store.vercel.app/',
+      githubUrl: 'https://github.com/DavidManiIbrahim/hng13-stage3-audiophile-store',
       featured: true
     },
     {
-      title: 'Task Management App',
+      title: 'FarmMarket',
       description: 'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features. Built with React and Firebase.',
-      image: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['React', 'Firebase', 'Material-UI', 'React DnD'],
-      liveUrl: '#',
-      githubUrl: '#',
+      image: 'public/FM.png',
+      tech: ['React', 'Supabase', 'TailwindCSS', 'Material-UI'],
+      liveUrl: 'https://rural-grow-connect.vercel.app/',
+      githubUrl: 'https://github.com/DavidManiIbrahim/farmMarket',
       featured: true
     },
     {
-      title: 'Weather Analytics Dashboard',
+      title: 'Abelov Customer Relationship Management System',
       description: 'An interactive dashboard displaying weather data with beautiful charts and forecasts. Features location-based weather, historical data, and responsive design.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['React', 'D3.js', 'OpenWeather API', 'Tailwind CSS'],
-      liveUrl: '#',
-      githubUrl: '#',
+      image: 'public/acrms.png',
+      tech: ['React', 'Typescript', 'Supabase', 'Tailwind CSS'],
+      liveUrl: 'https://acrms.vercel.app',
+      githubUrl: 'https://github.com/DavidManiIbrahim/acrms',
       featured: false
     },
     {
-      title: 'Social Media Dashboard',
+      title: 'Abelov Technical Records',
       description: 'A comprehensive social media management tool for scheduling posts, analyzing engagement, and managing multiple accounts across different platforms.',
-      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
-      liveUrl: '#',
-      githubUrl: '#',
-      featured: false
+      image: 'public/arms.png',
+      tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Node', 'Express', 'MongoDB'],
+      liveUrl: 'https://abelov-technical-records.onrender.com/',
+      githubUrl: 'https://github.com/DavidManiIbrahim/Abelov-Technical-Records-main',
+      featured: true
     },
     {
-      title: 'Cryptocurrency Tracker',
+      title: 'Gabyto Inventory Management System',
       description: 'Real-time cryptocurrency tracking application with portfolio management, price alerts, and detailed market analysis with interactive charts.',
-      image: 'https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['React', 'Redux', 'Chart.js', 'CoinGecko API'],
-      liveUrl: '#',
-      githubUrl: '#',
-      featured: false
+      image: 'public/gims.png',
+      tech: ['React', 'Material UI', 'Supabase', 'TailwindCSS'],
+      liveUrl: 'https://gabyto-inventory-management-system.vercel.app/',
+      githubUrl: 'https://github.com/DavidManiIbrahim/Gabyto-inventory-management-system',
+      featured: true
     },
     {
-      title: 'Recipe Sharing Platform',
+      title: 'Suggestion Box',
+      description: 'A modern feedback and suggestion platform with real time updates, admin moderation, and secure authentication built using React, TypeScript, and Supabase.',
+      image: 'public/box.jpg',
+      tech: ['React', 'Supabase', 'Typescript', 'TailwindCSS'],
+      liveUrl: 'https://incomparable-cocada-b8264f.netlify.app/',
+      githubUrl: 'https://github.com/DavidManiIbrahim/suggestion-box',
+      featured: false
+    },
+        {
+      title: 'Cyberdata Auromations Limited',
       description: 'A community-driven platform for sharing and discovering recipes with features like ratings, comments, meal planning, and shopping lists.',
-      image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['Vue.js', 'Express.js', 'MySQL', 'AWS S3'],
-      liveUrl: '#',
-      githubUrl: '#',
+      image: 'public/cyber.jpg',
+      tech: ['React', 'Supabase', 'TailwindCSS', 'TypeScript'],
+      liveUrl: 'https://cyberdata-automations-limited.vercel.app/',
+      githubUrl: 'https://github.com/DavidManiIbrahim/cyberdata-automations-limited',
       featured: false
     }
   ];
 
   const nextProject = () => {
-    setCurrentProject((prev) => (prev + 1) % projects.length);
+    setCurrentProject((prev) => (prev + 1) % featuredProjects.length);
   };
 
   const prevProject = () => {
