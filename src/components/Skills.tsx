@@ -18,7 +18,7 @@ const Skills = () => {
   ];
 
   const tools = [
-    'VS Code', 'Figma', 'Canva', 'Vite', 'Supabase',
+    'VS Code', 'Figma', 'Canva', 'Firebase', 'Supabase',
     'Convex', 'Postman', 'Vercel', 'Github',
     'Expo'
   ];

@@ -55,25 +55,27 @@ const Header = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white "
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={24} className=' absolute -me-8' /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4">
-            {navItems.map((item) => (
-              <button
-                key={item.href}
-                onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left py-2 text-gray-300 hover:text-white transition-colors duration-200"
-              >
-                {item.label}
-              </button>
-            ))}
+          <div className="md:hidden w-1/4 fixed top-0 -z-10 h-screen right-0 bg-transparent backdrop-blur-md border-b border-gray-700 animate-in fade-in slide-in-from-top-2 duration-300">
+            <div className="container mx-auto px-6 py-16 space-y-2">
+              {navItems.map((item) => (
+                <button
+                  key={item.href}
+                  onClick={() => scrollToSection(item.href)}
+                  className="block w-full text-left px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-200 font-medium"
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </div>
         )}
       </nav>
