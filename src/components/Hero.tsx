@@ -75,11 +75,11 @@ const Hero = () => {
             >
               View My Work
             </button>
-            <button className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105" >
+            {/* <button className="px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105" >
              <a href="/resume.pdf" download>
               Download CV
              </a>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
