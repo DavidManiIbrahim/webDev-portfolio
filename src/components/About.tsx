@@ -43,7 +43,7 @@ const About = () => {
                 I specialize in React, Javascript, and modern CSS frameworks, always staying up-to-date with the latest trends and best practices in frontend development. When I'm not coding, you'll find me exploring new design trends, contributing to open-source projects, or mentoring aspiring developers.
               </p>
               <div className="flex flex-wrap gap-4 mt-6">
-                <span className="px-4 py-2 bg-purple-600/20 text-purple-300 rounded-full text-sm font-medium">5+ Years Experience</span>
+                <span className="px-4 py-2 bg-purple-600/20 text-purple-300 rounded-full text-sm font-medium">3+ Years Experience</span>
                 <span className="px-4 py-2 bg-cyan-600/20 text-cyan-300 rounded-full text-sm font-medium">50+ Projects Completed</span>
                 <span className="px-4 py-2 bg-pink-600/20 text-pink-300 rounded-full text-sm font-medium">Happy Clients</span>
               </div>
