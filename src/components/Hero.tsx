@@ -35,7 +35,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
+    <section id="home" className="min-h-screen bg-[url(/bgbg.png)] flex items-center justify-center relative bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>

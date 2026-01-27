@@ -18,14 +18,14 @@ const Projects = () => {
       title: 'FarmMarket',
       description: 'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features. Built with React and Firebase.',
       image: '/FM.png',
-      tech: ['React', 'Supabase', 'TailwindCSS', 'Material-UI'],
+      tech: ['React', 'MongoDB', 'stripe', 'TailwindCSS', 'Material-UI'],
       liveUrl: 'https://rural-grow-connect.vercel.app/',
       githubUrl: 'https://github.com/DavidManiIbrahim/farmMarket',
       featured: true
     },
     {
       title: 'Abelov Customer Relationship Management System',
-      description: 'An interactive dashboard displaying weather data with beautiful charts and forecasts. Features location-based weather, historical data, and responsive design.',
+      description: 'A customer relationship management system for a hardware maintainance company with a responsive design.',
       image: '/acrms.png',
       tech: ['React', 'Typescript', 'Supabase', 'Tailwind CSS'],
       liveUrl: 'https://acrms.vercel.app',
@@ -34,16 +34,16 @@ const Projects = () => {
     },
     {
       title: 'Abelov Technical Records',
-      description: 'A comprehensive social media management tool for scheduling posts, analyzing engagement, and managing multiple accounts across different platforms.',
+      description: 'A comprehensive record management system for recording and tracking customers job request.',
       image: '/arms.png',
-      tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Node', 'Express', 'MongoDB'],
+      tech: ['React', 'TypeScript', 'TailwindCSS', 'Node', 'Express', 'MongoDB'],
       liveUrl: 'https://abelov-technical-records.onrender.com/',
       githubUrl: 'https://github.com/DavidManiIbrahim/Abelov-Technical-Records-main',
       featured: true
     },
     {
       title: 'FoodSpot',
-      description: 'A comprehensive social media management tool for scheduling posts, analyzing engagement, and managing multiple accounts across different platforms.',
+      description: 'A restorant tracker that will help you fing the  nearest restaurant close to your location.',
       image: '/food.png',
       tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Node', 'Express', 'MongoDB'],
       liveUrl: 'https://foodspot.onrender.com/',
@@ -52,7 +52,7 @@ const Projects = () => {
     },
     {
       title: 'Gabyto Inventory Management System',
-      description: 'Real-time cryptocurrency tracking application with portfolio management, price alerts, and detailed market analysis with interactive charts.',
+      description: 'An inventory management system for Gabyto pharmacy to help them log their drugs and manage inventory.',
       image: '/GIMS.png',
       tech: ['React', 'Material UI', 'Supabase', 'TailwindCSS'],
       liveUrl: 'https://gabyto-inventory-management-system.vercel.app/',
@@ -106,25 +106,25 @@ const Projects = () => {
     },
     {
       title: 'Abelov IT Academy',
-      description: 'An IT Academy management system with real time updates, admin moderation, and secure authentication built using React, TypeScript, and Supabase.',
+      description: 'An IT Academy management system with real time updates, admin moderation, and secure authentication built using React, TypeScript, and Convex.',
       image: '/IT.png',
-      tech: ['React', 'Supabase', 'Typescript', 'TailwindCSS'],
+      tech: ['React', 'Convex', 'Typescript', 'TailwindCSS'],
       liveUrl: 'https://abelov-it-academy.onrender.com/',
       githubUrl: 'https://github.com/DavidManiIbrahim/abelov-it-academy',
       featured: false
     },
     {
       title: 'Abelov sales management system',
-      description: 'An sales management system with real time updates, admin moderation, and secure authentication built using React, TypeScript, and Supabase.',
+      description: 'An sales management system with real time updates, admin moderation, and secure authentication built using React, TypeScript.',
       image: '/sales.png',
-      tech: ['React', 'Supabase', 'Typescript', 'TailwindCSS'],
+      tech: ['React', 'MongoDB', 'Typescript', 'TailwindCSS'],
       liveUrl: 'https://abelov-sales-management-system.onrender.com/',
       githubUrl: 'https://github.com/DavidManiIbrahim/abelov-sales-management-system',
       featured: false
     },
     {
       title: 'Northling',
-      description: 'An language learning management system with real time updates, admin moderation, and secure authentication built using React, TypeScript, and Supabase.',
+      description: 'An language learning management system with real time updates, admin moderation, and secure authentication built using React, TypeScript.',
       image: '/north.png',
       tech: ['React', 'MongoDB', 'Typescript', 'TailwindCSS'],
       liveUrl: 'https://northling.onrender.com/',
