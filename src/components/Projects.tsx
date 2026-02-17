@@ -37,7 +37,7 @@ const Projects = () => {
       description: 'A comprehensive record management system for recording and tracking customers job request.',
       image: '/arms.png',
       tech: ['React', 'TypeScript', 'TailwindCSS', 'Node', 'Express', 'MongoDB'],
-      liveUrl: 'https://abelov-technical-records.onrender.com/',
+      liveUrl: 'https://abelov-technical-records-main.onrender.com/',
       githubUrl: 'https://github.com/DavidManiIbrahim/Abelov-Technical-Records-main',
       featured: true
     },

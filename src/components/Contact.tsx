@@ -61,7 +61,7 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      value: '+234 (803) 048 8805',
+      value: '+234 803 0488 805',
       link: 'tel:+234 803 0488 805'
     },
     {
